@@ -60,7 +60,7 @@ export const projects = [
       "Designed scalable dashboards with job filtering and match scoring",
       "Created end-to-end application tracking system",
     ],
-    github: "https://job-match-uxvl.vercel.app/jobs",
+    github: "https://job-match-uxvl.vercel.app",
   },
   {
     title: "Mental Health Web App",

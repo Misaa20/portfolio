@@ -1,0 +1,116 @@
+\documentclass[10pt]{article}
+\usepackage[a4paper,margin=0.67in]{geometry}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage{xcolor}
+\usepackage[colorlinks=true,linkcolor=blue,urlcolor=blue]{hyperref}
+\usepackage{fontawesome5}
+\pagestyle{empty}
+\setlength{\parindent}{0pt}
+
+%==================== GLOBAL SPACING ====================
+\setlist[itemize]{topsep=2pt,itemsep=2pt,leftmargin=*}
+
+%==================== SECTION FORMATTING ====================
+\titleformat{\section}{\large\bfseries}{}{0em}{}[\vspace{2pt}\titlerule]
+\titlespacing*{\section}{0pt}{6pt}{4pt}
+
+\begin{document}
+
+%==================== HEADER ====================
+\begin{center}
+    {\LARGE \textbf{Era Trivedi}} \\ \vspace{3pt}
+    \href{https://github.com/Misaa20}{GitHub} \,|\, 
+    \href{https://linkedin.com/in/era-trivedi}{LinkedIn} \,|\, 
+    \href{mailto:eratrivedi2002@gmail.com}{eratrivedi2002@gmail.com} \,|\, 
+    +91-9140506453
+\end{center}
+
+%==================== EDUCATION ====================
+\section{Education}
+\textbf{Chandigarh University}, Mohali, Punjab \hfill Aug 2022 -- Present \\
+Bachelor of Engineering in Computer Science and Engineering \\
+CGPA: \textbf{8.12 / 10}
+\begin{itemize}
+    \item \textbf{Relevant Coursework:} Data Structures and Algorithms, Computer Networks, Operating Systems,
+    Database Management Systems, \textbf{Machine Learning}, Full Stack Development,
+    Distributed Systems, Object Oriented Programming
+\end{itemize}
+
+%==================== WORK EXPERIENCE ====================
+\section{Work Experience}
+\textbf{In-House Training – NLP and Web Scraping} \hfill Jun 2024 -- Jul 2024 \\
+Chandigarh University
+\begin{itemize}
+    \item Designed \textbf{Python-based data pipelines} to scrape, preprocess, and analyze large-scale textual data.
+    \item Implemented \textbf{BeautifulSoup}, \textbf{Requests}, and \textbf{Regex} for structured data extraction.
+    \item Performed \textbf{text cleaning}, \textbf{normalization}, and preprocessing to support NLP workflows.
+\end{itemize}
+
+%==================== TECHNICAL PROJECTS ====================
+\section{Technical Projects}
+
+\vspace{2pt}
+\textbf{Job Match – AI-Powered Job Portal}
+\hfill
+\href{https://github.com/Misaa20/Job-Match}{\faGithub}
+\\
+\textit{React.js, Node.js, Express.js, MongoDB, JWT, Tailwind CSS}
+\begin{itemize}
+    \item Built a \textbf{full-stack AI-driven platform} for \textbf{resume parsing}, \textbf{skill extraction}, and \textbf{intelligent job matching}.
+    \item Implemented \textbf{JWT-based authentication}, \textbf{role-based access control}, and secure REST APIs.
+    \item Built \textbf{scalable dashboards} with \textbf{job filtering}, \textbf{match scoring}, and end-to-end application tracking.
+\end{itemize}
+
+\vspace{2pt}
+\textbf{Mental Health Web App – AI-Assisted Wellness Platform}
+\hfill
+\href{https://github.com/Misaa20/mental-health-web-app}{\faGithub}
+\\
+\textit{React.js, Node.js, Express.js, MongoDB, NLP, Hugging Face Transformers}
+\begin{itemize}
+    \item Developed an \textbf{AI-powered mental wellness system} with \textbf{secure journaling} and \textbf{mood tracking}.
+    \item Integrated \textbf{Hugging Face Transformer models} for \textbf{sentiment analysis} and \textbf{emotion detection}.
+    \item Designed \textbf{RESTful APIs}, \textbf{data-driven dashboards}, and \textbf{personalized coping recommendations}.
+\end{itemize}
+
+\vspace{2pt}
+\textbf{MoneyTrail – Personal Finance Management System}
+\hfill
+\href{https://github.com/Misaa20/Expense-Tracker}{\faGithub}
+\\
+\textit{MongoDB, Express.js, React.js, Node.js}
+\begin{itemize}
+    \item Built a \textbf{full-stack finance application} for \textbf{real-time income and expense tracking}.
+    \item Designed \textbf{secure REST APIs} with \textbf{authentication}, \textbf{validation}, and CRUD operations.
+    \item Implemented \textbf{interactive data visualizations} to deliver \textbf{actionable financial insights}.
+\end{itemize}
+
+%==================== LEADERSHIP ====================
+\section{Leadership \& Extracurricular Activities}
+\textbf{Assistant Manager – Hack-Tech Community} \hfill Jul 2024 -- Dec 2024
+\begin{itemize}
+    \item Led \textbf{technical events}, \textbf{hackathons}, and team coordination for a 500+ member community.
+\end{itemize}
+
+\textbf{Class Representative} \hfill Aug 2022 -- Apr 2025
+\begin{itemize}
+    \item Acted as a \textbf{liaison between faculty and students}, ensuring effective communication and resolution.
+\end{itemize}
+
+%==================== SKILLS ====================
+\section{Skills}
+\textbf{Programming Languages:} C, C++, Java, Python, JavaScript (ES6), TypeScript \\
+\textbf{Frameworks \& Libraries:} React.js, Node.js, Express.js, Redux, NLTK, Hugging Face Transformers, Tailwind CSS \\
+\textbf{Databases:} MongoDB, MySQL, PostgreSQL \\
+\textbf{Cloud \& Tools:} AWS, Docker, Git, Linux, Postman
+
+%==================== ACHIEVEMENTS ====================
+\section{Achievements \& Certifications}
+\begin{itemize}
+    \item Solved \textbf{200+ Data Structures and Algorithms problems} on \href{https://leetcode.com/u/Era02/}{LeetCode}
+    \item \textbf{NPTEL Certified} in Cloud Computing — IIT Kharagpur (Jan 2025)
+    \item \textbf{IBM Certified} in Relational Databases (RDBMS) — Coursera (Mar 2024)
+\end{itemize}
+
+\end{document}

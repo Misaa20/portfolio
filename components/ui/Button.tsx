@@ -3,7 +3,7 @@ import Link from "next/link";
 interface ButtonProps {
   children: React.ReactNode;
   href?: string;
-  variant?: "primary" | "secondary" | "ghost" | "gradient";
+  variant?: "primary" | "secondary" | "ghost";
   size?: "sm" | "md" | "lg";
   external?: boolean;
   className?: string;
@@ -20,31 +20,24 @@ export default function Button({
   onClick,
 }: ButtonProps) {
   const baseStyles =
-    "group relative inline-flex items-center justify-center font-medium transition-all duration-300 rounded-xl overflow-hidden";
+    "inline-flex items-center justify-center font-medium transition-colors duration-200";
 
   const variants = {
     primary:
-      "bg-foreground text-background hover:bg-foreground/90 active:scale-[0.98]",
+      "bg-accent text-white hover:bg-accent-light",
     secondary:
-      "border border-white/[0.1] bg-white/[0.03] text-foreground backdrop-blur-sm hover:border-white/[0.2] hover:bg-white/[0.06] active:scale-[0.98]",
+      "border border-border text-foreground hover:border-muted hover:text-muted",
     ghost:
-      "text-muted hover:text-foreground hover:bg-white/[0.05] active:scale-[0.98]",
-    gradient:
-      "bg-gradient-to-r from-indigo-500 to-indigo-600 text-white hover:shadow-lg hover:shadow-indigo-500/25 active:scale-[0.98]",
+      "text-muted hover:text-foreground",
   };
 
   const sizes = {
     sm: "px-4 py-2 text-sm",
     md: "px-5 py-2.5 text-sm",
-    lg: "px-7 py-3.5 text-base",
+    lg: "px-6 py-3 text-base",
   };
 
   const combinedStyles = `${baseStyles} ${variants[variant]} ${sizes[size]} ${className}`;
-
-  // Shimmer effect for gradient variant
-  const shimmerEffect = variant === "gradient" && (
-    <span className="absolute inset-0 -z-10 bg-gradient-to-r from-transparent via-white/20 to-transparent translate-x-[-200%] group-hover:translate-x-[200%] transition-transform duration-700" />
-  );
 
   if (href) {
     if (external) {
@@ -55,14 +48,12 @@ export default function Button({
           rel="noopener noreferrer"
           className={combinedStyles}
         >
-          {shimmerEffect}
           {children}
         </a>
       );
     }
     return (
       <Link href={href} className={combinedStyles}>
-        {shimmerEffect}
         {children}
       </Link>
     );
@@ -70,7 +61,6 @@ export default function Button({
 
   return (
     <button onClick={onClick} className={combinedStyles}>
-      {shimmerEffect}
       {children}
     </button>
   );

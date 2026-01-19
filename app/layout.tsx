@@ -1,18 +1,19 @@
 import type { Metadata } from "next";
-import { Inter, JetBrains_Mono } from "next/font/google";
+import { Instrument_Serif, Instrument_Sans } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 
-const inter = Inter({
+const instrumentSerif = Instrument_Serif({
   subsets: ["latin"],
-  variable: "--font-inter",
+  weight: "400",
+  variable: "--font-serif",
   display: "swap",
 });
 
-const jetbrainsMono = JetBrains_Mono({
+const instrumentSans = Instrument_Sans({
   subsets: ["latin"],
-  variable: "--font-mono",
+  variable: "--font-sans",
   display: "swap",
 });
 
@@ -44,19 +45,11 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className={`${inter.variable} ${jetbrainsMono.variable}`}>
+    <html lang="en" className={`${instrumentSerif.variable} ${instrumentSans.variable}`}>
       <body className="font-sans antialiased">
-        <div className="relative flex min-h-screen flex-col overflow-hidden">
-          {/* Global background gradients */}
-          <div className="pointer-events-none fixed inset-0 z-0">
-            {/* Top spotlight */}
-            <div className="absolute -top-[40%] left-1/2 h-[800px] w-[1200px] -translate-x-1/2 rounded-full bg-gradient-to-b from-indigo-500/10 via-indigo-500/5 to-transparent blur-3xl" />
-            {/* Bottom accent */}
-            <div className="absolute -bottom-[20%] left-1/4 h-[600px] w-[800px] rounded-full bg-gradient-to-t from-cyan-500/5 to-transparent blur-3xl" />
-          </div>
-          
+        <div className="flex min-h-screen flex-col">
           <Navbar />
-          <main className="relative z-10 flex-1">{children}</main>
+          <main className="flex-1">{children}</main>
           <Footer />
         </div>
       </body>

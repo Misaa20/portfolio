@@ -5,7 +5,7 @@ export const personalInfo = {
   email: "eratrivedi2002@gmail.com",
   phone: "+91-9140506453",
   github: "https://github.com/Misaa20",
-  linkedin: "https://linkedin.com/in/era-trivedi",
+  linkedin: "https://www.linkedin.com/in/era-trivedi-87b091248",
   leetcode: "https://leetcode.com/u/Era02/",
   location: "India",
 };
@@ -19,7 +19,7 @@ export const education = {
   institution: "Chandigarh University",
   location: "Mohali, Punjab",
   duration: "Aug 2022 – Present",
-  cgpa: "8.12 / 10",
+  cgpa: "8.14 / 10",
   coursework: [
     "Data Structures & Algorithms",
     "Machine Learning",
@@ -60,7 +60,7 @@ export const projects = [
       "Designed scalable dashboards with job filtering and match scoring",
       "Created end-to-end application tracking system",
     ],
-    github: "https://github.com/Misaa20/Job-Match",
+    github: "https://job-match-uxvl.vercel.app/jobs",
   },
   {
     title: "Mental Health Web App",
@@ -154,5 +154,4 @@ export const navLinks = [
   { name: "About", href: "/about" },
   { name: "Projects", href: "/projects" },
   { name: "Experience", href: "/experience" },
-  { name: "Contact", href: "/contact" },
 ];
